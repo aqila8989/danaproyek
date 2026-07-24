@@ -1,0 +1,17 @@
+{
+  "name": "danaproyek",
+  "version": "1.0.0",
+  "description": "SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static HTML project - no build step required'",
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": ["spin805", "static", "html"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}

@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html amp lang="id">
+<html lang="id">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,15 +16,14 @@
     <meta property="og:title" content="SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi" />
     <meta property="og:description" content="SPIN805 menghadirkan pengalaman digital modern melalui informasi terkurasi, pembaruan terkini, dan akses cepat dalam satu platform eksklusif." />
     <meta name="theme-color" content="#6900ff" />
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     
+    <!-- Vercel Speed Insights -->
+    <script type="module">
+      import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1.1.0/+esm';
+      injectSpeedInsights();
+    </script>
     
-    
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    
-    <style amp-custom>
+    <style>
       /* ===== RESET & VARIABLES ===== */
       * { 
         box-sizing: border-box; 
@@ -397,16 +396,15 @@
     <div class="container">
       <header>
         <center>
-          <amp-img 
+          <img 
             id="image" 
             class="animated tada infinite slower" 
             src="https://res.cloudinary.com/dhxvwcnrj/image/upload/v1781892593/logo-HD_j42fr8.png" 
             alt="Spin805" 
             width="225" 
             height="65" 
-            layout="intrinsic"
             style="margin-bottom: 5px;"
-          ></amp-img>
+          />
         </center>
       </header>
       
@@ -416,14 +414,14 @@
         </center>
       </div>
       
-      <amp-img 
+      <img 
         src="https://res.cloudinary.com/dhxvwcnrj/image/upload/v1781977201/ChatGPT_Image_Jun_20_2026_10_39_42_AM_qwdzhb.png" 
         width="400" 
         height="400" 
-        layout="responsive" 
         alt="Banner Spin805" 
         class="banner"
-      ></amp-img>
+        style="max-width: 100%; height: auto;"
+      />
       
       <!-- Button utama -->
       <a href="https://spin805net.com/register/DRN6PQB4/" target="_blank" rel="noreferrer noopener" role="button" class="btn-login glow-on-hover"> LOGIN</a>
