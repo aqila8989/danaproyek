@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm/
+
+# Lock files (keep package-lock.json for npm)
+# We keep package-lock.json but ignore pnpm/yarn locks if they exist
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Cache directories
+.cache/
+.vercel/
+.parcel-cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
