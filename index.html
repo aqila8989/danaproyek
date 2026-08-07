@@ -1,443 +1,546 @@
+
+
 <!DOCTYPE html>
-<html amp lang="id">
+<html amp lang='id'>
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi</title>
+    <title> SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi</title>
     <meta name="description" content="SPIN805 menghadirkan pengalaman digital modern melalui informasi terkurasi, pembaruan terkini, dan akses cepat dalam satu platform eksklusif." />
-    <link href="https://ik.imagekit.io/yby/iconspin.png" rel="icon" type="image/x-icon" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/yby/iconspin.png" />
     <link rel="canonical" href="https://spin805.idn.de.com/" />
+    <link rel="alternate" href="https://spin805.idn.de.com/" hreflang="id" />
     <meta property="og:url" content="https://spin805.idn.de.com/" />
-    <meta property="og:site_name" content="Spin805" />
-    <meta property="og:image:alt" content="SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi" />
+    <meta property="og:site_name" content=" SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi" />
+    <meta property="og:image:alt" content=" SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi" />
     <meta property="og:image" content="https://ik.imagekit.io/yby/spingambar.png" />
-    <meta property="og:title" content="SPIN805 – Destinasi Digital Premium dengan Informasi Terkurasi" />
-    <meta property="og:description" content="SPIN805 menghadirkan pengalaman digital modern melalui informasi terkurasi, pembaruan terkini, dan akses cepat dalam satu platform eksklusif." />
-    <meta name="theme-color" content="#6900ff" />
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-   
-    
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-moz-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-ms-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-o-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
     <style amp-custom>
-      /* ===== RESET & VARIABLES ===== */
-      * { 
-        box-sizing: border-box; 
-        margin: 0;
-        padding: 0;
-      }
-      
-      :root {
-        --color: #6900ff;
-        --color-light: #76df9b;
-        --color-dark: #6900ff;
-        --black: #000000;
-        --dark: #76df9b;
-        --gradient-color: linear-gradient(135deg, #6900ff, #6900ff, #6900ff);
-        --shadow-color: 0 0 20px var(--color);
-        --shadow-glow: 0 0 30px var(--color-light);
-      }
-      
-      body { 
-        font-family: 'Courier New', monospace; 
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: 'Rajdhani', sans-serif;
         background: #000000;
-        background-image: 
-          radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-          radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-        background-size: 40px 40px, 80px 80px;
-        background-position: 0 0, 20px 20px;
+        color: #1908aa;
+        overflow-x: hidden;
         min-height: 100vh;
+      }
+
+      /* ── COSMIC STARFIELD ── */
+      .cosmos {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .stars-sm {
+        position: absolute;
+        width: 1px; height: 1px;
+        top: 0; left: 0;
+        box-shadow:
+          25px 10px #35068b, 100px 80px #040fa3, 200px 30px #6200ff,
+          320px 150px #0a07b8, 50px 200px #01109c, 180px 250px #8209a7,
+          280px 50px #3404b6, 350px 300px #061494, 70px 320px #0531a8,
+          150px 400px #6200ff, 390px 100px #190b99, 10px 450px #ed65ff,
+          250px 500px #270aaa, 300px 350px #071381, 130px 150px #b106a3,
+          370px 450px #082688, 220px 120px #9004b3, 90px 380px #940799,
+          340px 220px #6200ff, 160px 50px #5a07c7;
+        animation: twinkle-sm 4s ease-in-out infinite alternate;
+      }
+      .stars-md {
+        position: absolute;
+        width: 2px; height: 2px;
+        top: 0; left: 0;
+        box-shadow:
+          60px 50px #6200ff, 160px 130px #FFAB91, 280px 90px #a80693,
+          350px 200px #FF7043, 30px 280px #FFE0B2, 200px 350px #FFA726,
+          120px 180px #FF6E40, 300px 400px #FFD54F, 80px 430px #FF8A65,
+          250px 260px #6200ff, 380px 350px #FFAB91, 40px 100px #ac0896;
+        animation: twinkle-md 5s ease-in-out infinite alternate;
+      }
+      .stars-lg {
+        position: absolute;
+        width: 3px; height: 3px;
+        border-radius: 50%;
+        top: 0; left: 0;
+        box-shadow:
+          110px 60px #6200ff, 300px 170px #ad0082, 50px 350px #FF7043,
+          250px 420px #FFE0B2, 180px 100px #FFA726, 370px 280px #FF6E40;
+        animation: twinkle-lg 6s ease-in-out infinite alternate;
+      }
+
+      @keyframes twinkle-sm { from { opacity: 0.2; transform: scale(1); } to { opacity: 0.8; transform: scale(1.1); } }
+      @keyframes twinkle-md { from { opacity: 0.3; transform: scale(1); } to { opacity: 0.9; transform: scale(1.2); } }
+      @keyframes twinkle-lg { from { opacity: 0.4; transform: scale(1); } to { opacity: 1; transform: scale(1.5); } }
+
+      /* ── NEBULA GRADIENT OVERLAY ── */
+      .nebula {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background:
+          radial-gradient(ellipse at 20% 50%, rgba(98,0,255,0.08) 0%, transparent 50%),
+          radial-gradient(ellipse at 80% 20%, rgba(98,0,255,0.06) 0%, transparent 50%),
+          radial-gradient(ellipse at 50% 80%, rgba(98,0,255,0.05) 0%, transparent 50%);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* ── CONTAINER ── */
+      .container {
+        position: relative;
+        z-index: 1;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 16px 16px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
+      /* ── LOGO AREA WITH ORBIT ── */
+      .logo-wrap {
+        position: relative;
+        width: 180px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
       }
-      
-      /* Efek kilauan emas di background */
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: 
-          radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08), transparent 40%),
-          radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.1), transparent 50%);
-        pointer-events: none;
-        z-index: -1;
-        animation: pulseBg 8s ease-in-out infinite;
-      }
-      
-      @keyframes pulseBg {
-        0%, 100% { opacity: 0.5; }
-        50% { opacity: 1; }
-      }
-      
-      .container { 
-        max-width: 420px; 
-        width: 90%;
-        margin: 20px auto; 
-        padding: 25px 20px; 
-        display: flex; 
-        flex-direction: column; 
-        gap: 15px;
-        background: rgba(10, 8, 2, 0.7);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 30px;
-        box-shadow: 
-          0 0 0 1px rgba(255, 255, 255, 0.1),
-          0 20px 40px rgba(0, 0, 0, 0.8),
-          inset 0 0 30px rgba(255, 255, 255, 0.1);
-        position: relative;
-        overflow: hidden;
-        animation: fadeInUp 0.8s ease;
-      }
-      
-      /* Efek border laser emas */
-      .container::before {
-        content: '';
+      .orbit-dot {
         position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: conic-gradient(
-          from 0deg,
-          transparent,
-          var(--color),
-          var(--color-light),
-          var(--color),
-          transparent
-        );
-        border-radius: 32px;
-        z-index: -2;
-        animation: rotateBorder 6s linear infinite;
+        width: 6px; height: 6px;
+        background: #3d00ad;
+        border-radius: 50%;
+        top: -3px; left: 50%;
+        box-shadow: 0 0 8px #1100ad, 0 0 16px rgba(255,152,0,0.5);
+        animation: orb 3s linear infinite;
+        transform-origin: 3px 53px;
       }
-      
-      .container::after {
-        content: '';
-        position: absolute;
-        inset: 2px;
-        background: rgba(129 54 209 / 90%);
-        border-radius: 28px;
-        z-index: -1;
-      }
-      
-      @keyframes rotateBorder {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-      
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-      /* ===== TYPING EFFECT ===== */
-      .welcome { 
-        margin: 0 auto 5px; 
+      @keyframes orb { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+      /* ── TICKER MARQUEE ── */
+      .ticker-wrap {
         width: 100%;
-      }
-      
-      .welcome h3 { 
-        font-size: 14px; 
-        color: var(--color); 
-        white-space: nowrap; 
-        letter-spacing: 2px; 
-        text-transform: uppercase;
-        font-weight: 700;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        margin: 0 auto;
-        display: inline-block;
-      }
-      
-      @keyframes typing { 
-        0% { width: 0; } 
-        50% { width: 100%; } 
-        100% { width: 0; } 
-      }
-      
-      @keyframes blink-caret { 
-        from, to { border-color: transparent; } 
-        50% { border-color: var(--color-light); } 
-      }
-      
-      /* ===== BANNER ===== */
-      .banner { 
-        border-radius: 20px; 
-        box-shadow: 
-          0 10px 20px rgba(0, 0, 0, 0.5),
-          0 0 0 2px rgba(255, 255, 255, 0.3),
-          inset 0 0 20px rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
-      }
-      
-      .banner:hover {
-        transform: scale(1.02);
-        box-shadow: 
-          0 15px 30px rgba(0, 0, 0, 0.6),
-          0 0 0 3px rgba(255, 255, 255, 0.5),
-          inset 0 0 30px rgba(255, 255, 255, 0.3);
-      }
-      
-      /* ===== BUTTON STYLES ===== */
-      .btn-login, .btn-daftar { 
-        padding: 16px; 
-        font-size: 18px; 
-        font-weight: 800; 
-        text-decoration: none; 
-        text-align: center; 
-        margin: 5px 0;
-        border-radius: 50px;
-        position: relative;
-        z-index: 1;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .btn-login {
-        background: linear-gradient(145deg, #6900ff, #76df9b);
-        color: #ffffff;
-        border: 1px solid var(--color);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-      }
-      
-      .btn-daftar {
-        background: linear-gradient(145deg, #6900ff, #76df9b);
-        color: #ffffff;
-        font-weight: 900;
-        border: 1px solid var(--color-light);
-        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
-      }
-      
-      .btn-login:hover, .btn-daftar:hover {
-        transform: translateY(-3px);
-        filter: brightness(1.2);
-      }
-      
-      .btn-login:hover {
-        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
-      }
-      
-      .btn-daftar:hover {
-        box-shadow: 0 8px 30px rgba(255, 254, 247, 0.6);
-      }
-      
-      /* Efek glow saat hover */
-      .glow-on-hover {
-        position: relative;
         overflow: hidden;
+        background: linear-gradient(90deg, rgb(0 0 0), rgb(0 0 0), rgb(0 0 0));
+        border-top: 1px solid rgb(98 0 255);
+        border-bottom: 1px solid rgb(98 0 255);
+        padding: 6px 0;
+        border-radius: 6px;
       }
-      
-      .glow-on-hover::after {
+      .ticker {
+        display: inline-block;
+        white-space: nowrap;
+        font-family: 'Orbitron', monospace;
+        font-size: 10px;
+        font-weight: 700;
+        color: #b384ff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        animation: scroll-left 14s linear infinite;
+      }
+      @keyframes scroll-left { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
+
+      /* ── SECTION TITLE ── */
+      .section-tag {
+        font-family: 'Orbitron', monospace;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #000000;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 4px 16px;
+        border: 1px solid rgba(98 0 255 / 30%);
+        border-radius: 20px;
+        background: rgb(98 0 255);
+      }
+
+      /* ── BANNER ── */
+      .banner-card {
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid rgb(98 0 255);
+        box-shadow: 0 0 30px rgb(60 0 157 / 15%), 0 0 60px rgb(98 0 255 / 5%);
+      }
+      .banner-card::after {
         content: '';
         position: absolute;
-        top: -50%;
-        left: -60%;
-        width: 200%;
-        height: 200%;
-        background: linear-gradient(
-          to right,
-          transparent,
-          rgba(255, 255, 255, 0.1),
-          transparent
-        );
-        transform: rotate(30deg);
-        transition: transform 0.6s ease;
+        inset: 0;
+        border-radius: 12px;
+        background: linear-gradient(180deg, transparent 60%, rgba(10,5,5,0.8) 100%);
         pointer-events: none;
       }
-      
-      .glow-on-hover:hover::after {
-        transform: rotate(30deg) translate(20%, 20%);
+
+      /* ── STAT COUNTERS ── */
+      .stats-row {
+        display: flex;
+        width: 100%;
+        gap: 8px;
       }
-      
-      /* ===== GRID BUTTONS ===== */
-      .button-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+      .stat-box {
+        flex: 1;
+        text-align: center;
+        padding: 10px 4px;
+        background: rgb(53 0 137);
+        border: 1px solid rgb(98 0 255);
+        border-radius: 10px;
+      }
+      .stat-num {
+        font-family: 'Orbitron', monospace;
+        font-size: 16px;
+        font-weight: 900;
+        color: #8d8d8d;
+        line-height: 1.2;
+      }
+      .stat-label {
+        font-size: 9px;
+        color: rgba(0 0 0);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 2px;
+      }
+
+      /* ── CTA BUTTONS ── */
+      .cta-group {
+        display: flex;
+        width: 100%;
         gap: 10px;
-        margin-top: 10px;
       }
-      
-      .button-grid a {
-        padding: 12px;
-        font-size: 14px;
+      .btn-cta {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 8px;
+        font-family: 'Orbitron', monospace;
+        font-size: 13px;
         font-weight: 700;
         text-decoration: none;
         text-align: center;
-        border-radius: 40px;
-        background: linear-gradient(135deg, #1a1505, #76df9b);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        color: #ffffff;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
+        border-radius: 10px;
         letter-spacing: 1px;
         position: relative;
         overflow: hidden;
       }
-      
-      .button-grid a::before {
+      .btn-login {
+        color: #000000;
+        background: linear-gradient(135deg, #6200ff, #6200ff);
+        box-shadow: 0 4px 20px rgb(98 0 255 / 55%);
+      }
+      .btn-login::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-        transition: left 0.5s ease;
+        inset: 0;
+        background: linear-gradient(135deg, transparent 30%, rgb(255 255 255 / 58%) 50%, transparent 70%);
+        animation: btn-shine 3s ease-in-out infinite;
       }
-      
-      .button-grid a:hover::before {
-        left: 100%;
+      @keyframes btn-shine { 0%,100% { transform: translateX(-100%); opacity: 0; } 50% { transform: translateX(100%); opacity: 1; } }
+
+      .btn-daftar {
+        color: #6200ff;
+        background: transparent;
+        border: 2px solid #6200ff;
+        box-shadow: 0 0 15px rgba(98,0,255,0.1);
       }
-      
-      .button-grid a:hover {
-        background: linear-gradient(135deg, #2a1f0a, #6900ff);
-        border-color: #ffffff;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-        transform: translateY(-2px);
-        color: #fff;
-      }
-      
-      /* ===== COPYRIGHT ===== */
-      .copyright { 
-        text-align: center; 
-        color: rgba(255, 255, 255, 0.6); 
-        font-size: 12px; 
-        margin-top: 15px;
-        letter-spacing: 0.5px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 15px;
-      }
-      
-      .copyright strong { 
-        color: var(--color); 
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        font-weight: 900;
-      }
-      
-      /* ===== ANIMASI LOGO ===== */
-      .animated {
-        animation-duration: 2s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes tada {
-        0% { transform: scale3d(1, 1, 1); }
-        10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
-        30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
-        40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-        100% { transform: scale3d(1, 1, 1); }
-      }
-      
-      .tada { animation-name: tada; }
-      
-      .slower { animation-duration: 3s; }
-      
-      .color-sparkle {
-        position: fixed;
-        pointer-events: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-      }
-      
-      .color-sparkle span {
+      .btn-daftar::before {
+        content: '';
         position: absolute;
-        width: 6px;
-        height: 6px;
-        background: #6900ff;
+        inset: 0;
+        background: rgb(0 0 0);
+        animation: btn-pulse 2s ease-in-out infinite alternate;
+      }
+      @keyframes btn-pulse { from { opacity: 0; transform: scale(1); } to { opacity: 1; transform: scale(1); } }
+
+      /* ── PROVIDER GRID ── */
+      .provider-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        width: 100%;
+      }
+      .provider-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 4px;
+        background: rgb(98 0 255);
+        border: 1px solid rgb(208 0 0 / 10%);
+        border-radius: 8px;
+        font-family: 'Orbitron', monospace;
+        font-size: 7px;
+        font-weight: 700;
+        color: rgba(255 255 255 / 60%);
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .provider-cell:nth-child(odd) { animation: cell-float 4s ease-in-out infinite alternate; }
+      .provider-cell:nth-child(even) { animation: cell-float 4s ease-in-out infinite alternate-reverse; }
+      @keyframes cell-float { from { transform: translateY(0); } to { transform: translateY(-3px); } }
+
+      /* ── ACCORDION INFO ── */
+      .info-accordion {
+        width: 100%;
+      }
+      .info-accordion section {
+        border: 2px solid rgb(239 210 0);
+        margin-bottom: 6px;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      .info-accordion h4 {
+        font-family: 'Orbitron', monospace;
+        font-size: 10px;
+        font-weight: 700;
+        color: #b3b3b3;
+        padding: 12px 14px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgb(52 11 4);
+      }
+      .info-accordion h4 .ico { font-size: 14px; }
+      .info-accordion p {
+        font-size: 11px;
+        line-height: 1.6;
+        color: rgba(255 255 255 / 60%);
+        padding: 10px 14px 14px;
+      }
+
+      /* ── SCROLL FADE IN ── */
+      .fade-target { opacity: 0; transform: translateY(20px); }
+      .fade-target.show { animation: fade-up 0.5s ease forwards; }
+      @keyframes fade-up { to { opacity: 1; transform: translateY(0); } }
+
+      /* ── LIVE BADGE ── */
+      .live-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: 'Orbitron', monospace;
+        font-size: 9px;
+        font-weight: 700;
+        color: #live-badg;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .live-dot {
+        width: 6px; height: 6px;
+        background: #6200ff;
         border-radius: 50%;
-        box-shadow: 0 0 20px #6900ff;
-        animation: sparkle 3s ease-in-out infinite;
+        animation: blink-dot 1s ease-in-out infinite alternate;
+      }
+      @keyframes blink-dot { from { opacity: 0.3; transform: scale(0.8); } to { opacity: 1; transform: scale(1.2); } }
+
+      /* ── DIVIDER ── */
+      .divider {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #6200ff, transparent);
+        border-radius: 2px;
+      }
+
+      /* ── FOOTER ── */
+      .footer {
+        text-align: center;
+        font-size: 10px;
+        color: rgba(255,243,224,0.25);
+        padding-top: 8px;
+      }
+      .footer a {
+        color: rgba(98 0 255);
+        text-decoration: none;
+      }
+
+      /* ── SHOOTING STAR ── */
+      .shooting-star {
+        position: fixed;
+        width: 80px; height: 1px;
+        background: linear-gradient(90deg, #9e0997, transparent);
+        top: 15%; left: -80px;
         opacity: 0;
+        animation: shoot 6s linear infinite;
+        z-index: 0;
+        pointer-events: none;
+        border-radius: 1px;
       }
-      
-      @keyframes sparkle {
-        0% { transform: scale(0); opacity: 0; }
-        50% { transform: scale(1); opacity: 0.8; }
-        100% { transform: scale(0); opacity: 0; }
+      .shooting-star:nth-child(2) {
+        top: 45%;
+        animation-delay: 2.5s;
+        width: 60px;
       }
-      
-      /* Random sparkle positions */
-      .color-sparkle span:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
-      .color-sparkle span:nth-child(2) { top: 30%; left: 80%; animation-delay: 1s; }
-      .color-sparkle span:nth-child(3) { top: 70%; left: 40%; animation-delay: 2s; }
-      .color-sparkle span:nth-child(4) { top: 85%; left: 70%; animation-delay: 1.5s; }
-      .color-sparkle span:nth-child(5) { top: 45%; left: 15%; animation-delay: 2.5s; }
+      .shooting-star:nth-child(3) {
+        top: 70%;
+        animation-delay: 4.5s;
+        width: 100px;
+      }
+      @keyframes shoot {
+        0% { transform: translateX(0) translateY(0); opacity: 0; }
+        5% { opacity: 1; }
+        30% { transform: translateX(500px) translateY(80px); opacity: 0; }
+        100% { transform: translateX(500px) translateY(80px); opacity: 0; }
+      }
+
+      /* ── GLOW RING BEHIND BANNER ── */
+      .glow-ring {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top: 10%; left: 10%;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,87,34,0.12), transparent 70%);
+        pointer-events: none;
+        animation: ring-breathe 4s ease-in-out infinite alternate;
+      }
+      @keyframes ring-breathe { from { opacity: 0.4; transform: scale(0.95); } to { opacity: 1; transform: scale(1.05); } }
     </style>
   </head>
   <body>
-    <!-- Efek kilauan emas -->
-    <div class="color-sparkle">
-      <span></span><span></span><span></span><span></span><span></span>
+
+    <!-- AMP ANIMATIONS -->
+    <amp-animation id="fadeInUp" layout="nodisplay">
+      <script type="application/json">
+        {
+          "selector": ".fade-target",
+          "duration": "600ms",
+          "fill": "forwards",
+          "easing": "ease-out",
+          "keyframes": [
+            { "opacity": 0, "transform": "translateY(20px)" },
+            { "opacity": 1, "transform": "translateY(0)" }
+          ]
+        }
+      </script>
+    </amp-animation>
+
+    <!-- COSMIC BG -->
+    <div class="cosmos">
+      <div class="stars-sm"></div>
+      <div class="stars-md"></div>
+      <div class="stars-lg"></div>
     </div>
-    
+    <div class="nebula"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- MAIN -->
     <div class="container">
-      <header>
-        <center>
-          <amp-img 
-            id="image" 
-            class="animated tada infinite slower" 
-            src="https://ik.imagekit.io/yby/spinlogo.png" 
-            alt="Spin805" 
-            width="225" 
-            height="65" 
-            layout="intrinsic"
-            style="margin-bottom: 5px;"
-          ></amp-img>
-        </center>
-      </header>
-      
-      <div class="welcome">
-        <center>
-          <h3>TOP 1 PENCARIAN SLOT SPIN GAME ONLINE GOOGLE</h3>
-        </center>
+
+      <!-- LOGO + ORBIT -->
+      <div class="logo-wrap">
+        <div class="orbit-ring">
+          <div class="orbit-dot"></div>
+        </div>
+        <a href="https://dub.sh/akurindu/">
+          <amp-img src="https://ik.imagekit.io/yby/spinlogo.png" alt="spin805" width="180" height="54" layout="intrinsic"></amp-img>
+        </a>
       </div>
-      
-      <amp-img 
-        src="https://ik.imagekit.io/yby/spingambar.png" 
-        width="400" 
-        height="400" 
-        layout="responsive" 
-        alt="Banner Spin805" 
-        class="banner"
-      ></amp-img>
-      
-      <!-- Button utama -->
-      <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button" class="btn-login glow-on-hover"> LOGIN</a>
-      <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button" class="btn-daftar glow-on-hover"> DAFTAR</a>
-      <div class="button-grid">
-        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button"> RESULT</a>
-        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button"> PREDIKSI</a>
-        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button"> RTP SLOT</a>
-        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" role="button"> LIVE DRAW</a>
+
+      <!-- LIVE BADGE -->
+      <div class="live-badge">
+        <div class="live-dot"></div>
+        <span>Live &mdash; Taruhan SLOT Hari Ini</span>
       </div>
-    
-      <div style="background: rgba(212,175,55,0.05); padding: 10px; border-radius: 10px; margin-top: 10px; text-align: center; border: 1px dashed rgba(212,175,55,0.3);">
-        <span style="color: #ffffff; font-size: 12px;">CTRL + U > CTRL + A > CTRL + C > CTRL + V > CTRL + Z > CTRL + S > INDEX.HTML > WINDOWS > Shutdown > </span>
+
+      <!-- TICKER -->
+      <div class="ticker-wrap">
+        <div class="ticker">
+          SELAMAT DATANG DI spin805 BOSKU | PASARAN SLOT TERBESAR | MINIMAL DEPOSIT 10.000 | AGEN SLOT TERBESAR DI INDONESIA | PASTI BAYAR | PROSES TRANSAKSI SECEPAT KILAT | LINK ANTI BLOKIR : spin805
+        </div>
       </div>
-      <p class="copyright">
-        &copy; 2014 - 2026 <strong>Spin805</strong> | LAZY ~ LOAD<br>
-        <span style="font-size: 10px; color: rgba(255,255,255,0.3);">ANALYZE - OPTIMIZE - MAXIMIZE #Spin805</span>
-      </p>
+
+      <!-- BANNER -->
+      <div class="banner-card" style="position:relative;">
+        <div class="glow-ring"></div>
+        <amp-img src="https://ik.imagekit.io/yby/spingambar.png" width="400" height="400" layout="responsive" alt="Banner Taruhan SLOT"></amp-img>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-num">98.7%</div>
+          <div class="stat-label">Prediksi</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">978K+</div>
+          <div class="stat-label">Member</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">90+</div>
+          <div class="stat-label">PASARAN</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-group">
+        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" class="btn-cta btn-login">LOGIN</a>
+        <a href="https://dub.sh/akurindu/" target="_blank" rel="noreferrer noopener" class="btn-cta btn-daftar">DAFTAR</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- SECTION TAG -->
+      <div class="section-tag">&#9830; Pasaran Resmi</div>
+
+      <!-- PROVIDER GRID -->
+      <div class="provider-grid">
+        <div class="provider-cell">SLOT</div>
+        <div class="provider-cell">LALIGA</div>
+        <div class="provider-cell">SERIEA</div>
+        <div class="provider-cell">UCL</div>
+        <div class="provider-cell">EUL</div>
+        <div class="provider-cell">AFC</div>
+        <div class="provider-cell">MLS</div>
+        <div class="provider-cell">LIGUE1</div>
+      </div>
+
+      <div class="divider"></div>
+      </amp-accordion>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <p>&copy; 2026 &bull; <a href="https://dub.sh/akurindu/">spin805</a> &bull; Seo Barbarian</p>
+      </div>
+
     </div>
   </body>
 </html>
